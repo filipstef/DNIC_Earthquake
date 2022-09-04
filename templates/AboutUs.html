@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style src="style.css">
+        .lead {
+            font-size: 1.25rem;
+            font-weight: 300;
+          }
+          #intro-div {
+            padding-top: 50px;
+          }
+          #about{
+            padding-top: 2em;
+          }
+          header{
+            height: 10em;
+          }
+    </style>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    {%include "Navbar.html"%}
+
+<header class="bg-primary bg-gradient text-white">
+    <div class="container px-4 text-center" id='intro-div'>
+        <h1 class="fw-bolder">Welcome to Earthquake</h1>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-lg-8">
+                <h2>About this page</h2>
+                <p class="lead">This is a educational site for earthquake safety. This site warns about recent earthquakes and informs users how to act in the event of a earthquake. This site features a few pages:</p>
+                <ul>
+                    <li><b>Home</b> - Has a list of recent earthquakes, and upon clicking a element from the list there is a poopup with more information</li>
+                    <li><b>Learn</b> - short videos with quizes intended to teach users how to act in the event of a earthquake</li>
+                    <li><b>About us</b> - Information about this site (current page)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%include "footer.html"%}
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.nav{
+    background: slategray;
+}
+.nav-link{
+    text-decoration-color: black;
+}
+.nav-item{
+    width:200px;
+}
+#login{
+    float:right;
+}
+#f{
+    background: white;
+    padding-top: 50px;
+}
+#List{
+    padding-top: 50px;
+}
+.modal-lg {
+    width: 900px;
+}
